@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaria: #FF94CC;
+    --secundaria: #FF2626;
+    --branco: #fff;
+    --preto: #000;
+    --hover: #F9A1BC;
+}
+
+body{
+    background-color: var(--primaria);
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 10%;
+} 
+.pos-a{
+    position: absolute;
+    width: 100%;
+}
+.pos-r{
+    position: relative;
+}
+#menuApp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 95%;
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: var(--secundaria);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 30px var(--preto);
+}
+h2{
+    text-decoration: underline;
+}
+h3{
+    color: var(--branco);
+    filter: drop-shadow(2px 2px 6px black);
+    font-family: system-ui;
+    font-size: 110px;
+}
+h4{
+    font-size: 40px;
+    font-family: monospace;
+    filter: drop-shadow(1px 1px 1px #fff);
+}
+input[type=text]{
+    width: 290px;
+    height: 39px;
+    border: 1px solid var(--preto);
+    font-size: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+input[type=submit]{
+    width: 460px;
+    height: 80px;
+    border: 1px solid var(--preto);
+    font-size: 50px;
+    font-family: monospace;
+    background-color: var(--primaria);
+    color: var(--branco);
+    margin: 10px auto;
+    border-radius: 12px;
+}
+input[type=submit]:hover{
+    width: 460px;
+    height: 80px;
+    border: 1px solid var(--preto);
+    font-size: 50px;
+    font-family: monospace;
+    background-color: var(--hover);
+    color: var(--secundaria);
+    margin: 10px auto;
+    border-radius: 12px;
+}
+.alert{
+    font-size: 20px;
+    color: var(--branco);
+    display: none;
+}
+
+@media screen and (max-height:700px){
+    #menuApp{
+        width: 600px;
+        height: 400px;
+    }
+
+}
+
+
+/*
+nav {    
+    width: 100%;    
+    display: flex;    
+    position: fixed;    
+    background-color: black;    
+    z-index: 99;    
+}
+
+nav a {    
+    color: #fff;    
+    margin: auto 20px auto 40px;    
+    text-decoration: none;    
+    font-weight: bold;    
+}
+
+nav li {    
+    color: #fff;    
+    float: left;    
+    list-style: none;    
+    margin-left: 20px;    
+}
+
+nav li:hover {    
+    color: #000;    
+    background-color: #fff;
+    float: left;    
+    list-style: none;    
+    margin-left: 20px;   
+}
+*/
